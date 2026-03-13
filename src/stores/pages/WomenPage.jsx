@@ -11,9 +11,9 @@ const WomenPage = () => {
       <div className="pagesection">
         {womanData.map((item)=>{
             return(
-                <div>
+                <div key={item.id}>
                     <div className="pageImg">
-                        <img src={item.image} alt="" />
+                        <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
                     </div>
                     <div className="promodel">
                         {item.brand},{item.model}

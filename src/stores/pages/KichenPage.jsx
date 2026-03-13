@@ -11,9 +11,9 @@ const KichenPage = () => {
       <div className="pagesection">
         {kitchenData.map((item)=>{
           return(
-            <div>
+            <div key={item.id}>
               <div className="page Img">
-                <img src={item.image} alt="" />
+                <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
               </div>
               <div className="promodel">
                 {item.brand},{item.model}

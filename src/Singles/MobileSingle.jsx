@@ -17,7 +17,7 @@ const MobileSingle = () => {
     <Navbar />
     <div className="ind-section">
         <div className="ind-image">
-            <img src={product.image} alt="" />
+            <img src={`${import.meta.env.BASE_URL}${product.image}`}  alt="" />
         </div>
         <div className="ind-Details space">
             <div className="ind-company">

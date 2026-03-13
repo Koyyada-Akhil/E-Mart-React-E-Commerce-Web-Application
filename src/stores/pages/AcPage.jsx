@@ -11,9 +11,9 @@ const AcPage = () => {
         <div className="pagesection">
         {acData.map((item)=>{
             return(
-               <div>
+               <div key={item.id}>
                     <div className="pageImg">
-                        <img src={item.image} alt="" />
+                        <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
                     </div>
                     <div className="promodel">
                         {item.company},{item.model}

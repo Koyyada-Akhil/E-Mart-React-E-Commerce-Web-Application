@@ -8,7 +8,7 @@ const MobilePage = () => {
 
     const companyHandler=(mango)=>{
         if (selectedproduct.includes(mango)){
-            setSelectedProduct.filter(item =>item !==(mango))
+            setSelectedProduct(prev => prev.filter(item => item !== mango))
         }
         else{
             setSelectedProduct([mango])
@@ -24,7 +24,7 @@ const MobilePage = () => {
      <div className="pro-selected">
     {mobileData.map((phone)=>{
         return(
-            <div className="pro-input">
+            <div key={phone.id} className="pro-input">
             <label>
                 <input type="checkbox"
                 checked={selectedproduct.includes(phone.company)}
@@ -43,10 +43,10 @@ const MobilePage = () => {
         {
             filterproduct.map((item)=>{
                 return(
-                    <div>
+                    <div key={item.id}>
                         <Link to={`/mobiles/${item.id}`}>
                     <div className="pageImg">
-                        <img src={item.image} alt="" />
+                        <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
                     </div>
                     </Link>
                     <div className="promodel">

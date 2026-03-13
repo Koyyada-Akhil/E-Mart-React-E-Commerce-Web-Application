@@ -17,7 +17,7 @@ const UseCart = () => {
         return(
             <div className='cart-section'>
                 <div className="cart-img">
-                    <img src={item.image} alt="" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
                 </div>
                 <div className="cart-details">
                     <h3>{item.product}</h3>

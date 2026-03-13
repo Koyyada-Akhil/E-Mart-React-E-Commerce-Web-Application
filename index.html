@@ -5,7 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-mart</title>
-    <script type="module" crossorigin src="/E-Mart-React-E-Commerce-Web-Application/assets/index-ByVxd9n5.js"></script>
+    <script>
+      const redirect = sessionStorage.getItem('redirect');
+      if (redirect) {
+        sessionStorage.removeItem('redirect');
+        window.history.replaceState(null, '', redirect);
+      }
+    </script>
+    <script type="module" crossorigin src="/E-Mart-React-E-Commerce-Web-Application/assets/index-ByQYy_tb.js"></script>
     <link rel="stylesheet" crossorigin href="/E-Mart-React-E-Commerce-Web-Application/assets/index-CQhS7sfA.css">
   </head>
   <body>

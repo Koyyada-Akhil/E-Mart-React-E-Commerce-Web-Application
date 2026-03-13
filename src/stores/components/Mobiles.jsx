@@ -15,7 +15,7 @@ const Mobiles = () => {
         {
             firstFiveImages.map((item)=>{
                 return(
-                    <div className='imgbox'>
+                    <div key={item.id} className='imgbox'> 
                         <img className='proimage' src={item.image} alt="" />
                     </div>
                 )

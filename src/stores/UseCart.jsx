@@ -15,9 +15,9 @@ const UseCart = () => {
    <div>
      {cartItems.map((item)=>{
         return(
-            <div className='cart-section'>
+            <div key={item.id} className='cart-section'>
                 <div className="cart-img">
-                    <img src={`${import.meta.env.BASE_URL}${item.image}`}  alt="" />
+                    <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt="" />
                 </div>
                 <div className="cart-details">
                     <h3>{item.product}</h3>

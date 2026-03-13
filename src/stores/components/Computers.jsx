@@ -13,8 +13,8 @@ const Computers = () => {
         {
             firstFiveImages.map((item)=>{
                 return(
-                    <div className='imgbox'>
-                        <img className='proimage' src={item.image} alt="" />
+                    <div key={item.id} className='imgbox'>
+                        <img className='proimage' src={`${import.meta.env.BASE_URL}${item.image}`} alt="" />
                     </div>
                 )
 

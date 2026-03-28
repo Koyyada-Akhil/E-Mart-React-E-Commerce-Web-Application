@@ -1,16 +1,47 @@
-# React + Vite
+# E-Mart — E-Commerce Interface 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce product browsing interface built with React.js.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+- Frontend: [your-vercel-link]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Browse 100+ products across 5+ categories
+- Dynamic filtering by category and price
+- Real-time product rendering
+- Zero-reload multi-page navigation with React Router
+- Live product data from third-party REST API
+- Fully responsive design for mobile and desktop
 
-## React Compiler
+## 🛠️ Tech Stack
+| Layer | Technology |
+|---|---|
+| Frontend | React.js, React Router, Axios |
+| Styling | CSS3, Responsive Design |
+| API | Third-party REST API (live data) |
+| Deployment | Vercel |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 How to Run Locally
+```bash
+git clone https://github.com/Koyyada-Akhil/your-repo-name
+cd emart
+npm install
+npm start
+```
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
+```
+src/
+├── components/
+│   ├── Navbar.js
+│   ├── ProductCard.js
+│   ├── ProductList.js
+│   └── Filter.js
+├── pages/
+│   ├── Home.js
+│   └── ProductDetail.js
+└── App.js
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+*(Add screenshots of your app here)*

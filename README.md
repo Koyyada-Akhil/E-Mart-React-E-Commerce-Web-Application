@@ -42,6 +42,3 @@ src/
 │   └── ProductDetail.js
 └── App.js
 ```
-
-## 📸 Screenshots
-*(Add screenshots of your app here)*
